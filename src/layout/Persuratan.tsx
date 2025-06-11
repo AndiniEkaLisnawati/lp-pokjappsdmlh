@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
 export default function Persuratan() {
@@ -10,12 +9,8 @@ export default function Persuratan() {
         return "https://" + url;
     };
 
-    useEffect(() => {
-        console.log("url:", parseUrl(gdriveUrl));
-    }, []);
-
     return (
-        <section className="bg-teal-500 py-20 px-4 flex flex-col items-center">
+        <section id="persuratan" className="bg-teal-500 py-20 px-4 flex flex-col items-center">
             <div className="text-center mb-12">
                 <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow">Persuratan</h1>
                 <p className="text-lg md:text-xl text-white/90 mt-2">Untuk detail foldernya tekan tombol di bawah</p>
