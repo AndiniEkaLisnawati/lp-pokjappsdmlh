@@ -4,16 +4,18 @@ interface SlideProps {
     image: string;
 }
 
-export default function Slide({id, title, image}: SlideProps) {
+export default function Slide({ id, title, image }: SlideProps) {
     return (
-        <>
-            <div className="relative">
-                <img className="h-screen w-full" src={image} alt="" />
-                <div className="absolute flex flex-col items-center justify-center z-10 inset-0">
-                    <h1 className="text-6xl text-slate-50 font-bold">{id}</h1>
-                    <h1 className="text-slate-50 text-5xl font-semibold">{title}</h1>
-                </div>
+        <div className="relative rounded-xl overflow-hidden shadow-lg group">
+            <img
+                src={image}
+                alt={title}
+                className="h-72 w-full object-cover transform group-hover:scale-105 transition duration-500 ease-in-out"
+            />
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-all flex flex-col justify-center items-center text-white">
+                <p className="mt-2 text-3xl text-white">{id}</p>
+                <h2 className="text-4xl font-bold drop-shadow-lg">{title}</h2>
             </div>
-        </>
-    )
+        </div>
+    );
 }
