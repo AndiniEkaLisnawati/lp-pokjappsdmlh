@@ -1,8 +1,23 @@
+import { useEffect, useState } from 'react';
 import logo from '../assets/icon/icon.png';
 
 export default function Header() {
+    const [scrolled, setScrolled] = useState(false);
+
+useEffect(() => {
+    const handleScroll = () => {
+        setScrolled(window.scrollY > 200);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
     return (
-        <header className="bg-teal-500 shadow-md px-6 py-4">
+        <header className={`transition-all duration-300 ease-in-out ${
+            scrolled ? 'bg-teal-500 shadow-md' : 'bg-transparent'
+        } px-6 py-2 fixed w-full z-20`}>
             <div className="max-w-7xl mx-auto flex items-center gap-4">
                 <img
                     src={logo}
