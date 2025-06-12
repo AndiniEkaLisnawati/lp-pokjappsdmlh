@@ -5,8 +5,7 @@ export default function Persuratan() {
     const embeddedGdriveUrl = import.meta.env.VITE_EMBEDDED_GDRIVE_URL;
 
     const parseUrl = (url: string) => {
-        if (url.startsWith("https://")) return url;
-        return "https://" + url;
+       return url.startsWith('https://') ? url : `https://${url}`;
     };
 
     return (

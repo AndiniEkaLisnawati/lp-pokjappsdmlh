@@ -5,6 +5,7 @@ interface SlideProps {
 }
 
 export default function Slide({ id, title, image }: SlideProps) {
+
     return (
         <div className="relative rounded-xl overflow-hidden shadow-lg group">
             <img
