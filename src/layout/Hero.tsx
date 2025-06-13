@@ -16,7 +16,7 @@ export default function Hero() {
                     className="w-40 mx-auto mb-6 animate-fade-in"
                 /> */}
                 <MySwiper image={images} />
-                <div className='bg-gradient-to-b from-transparent to-slate-100 drop-shadow-md inset-0 absolute justify-center items-center flex flex-col pt-50'>
+                <div className='bg-gradient-to-b from-transparent to-slate-50 inset-0 absolute justify-center items-center flex flex-col pt-50'>
                     <h1 className="text-4xl md:text-5xl font-bold text-teal-800 dark:text-white drop-shadow-md">
                         Selamat Datang di POKJAPPSDMLH
                     </h1>
