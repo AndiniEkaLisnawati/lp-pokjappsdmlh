@@ -91,7 +91,8 @@ export default function PortoNasum() {
   return (
     <div className="min-h-screen p-6 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
       <h1 className="text-3xl font-bold mb-4 text-center">Portofolio Widyaiswara</h1>
-      <div className="w-30 h-1 bg-gray-800 dark:bg-white mx-auto rounded-full mb-6"></div>
+      <div className="w-30 h-1 bg-gray-800 dark:bg-white mx-auto rounded-full mb-2"></div>
+      <p className="text-lg font-lg text-center mb-4">Untuk detail Klik bagian kotak narasumber</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {dummyData.map((d) => (
           <div

@@ -17,7 +17,7 @@ useEffect(() => {
 
     return (
         <header className={`transition-all duration-300 ease-in-out ${
-            scrolled ? 'bg-teal-500 shadow-md' : 'bg-transparent'
+            scrolled ? 'bg-teal-500 dark:bg-gray-800 shadow-md' : 'bg-transparent'
         } px-6 py-2 fixed w-full z-20`}>
             <div className="max-w-7xl justify-between mx-auto flex items-center gap-4">
                 <div className='flex items-center'>

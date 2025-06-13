@@ -9,7 +9,7 @@ export default function Content() {
     ];
 
     return (
-        <section className="py-16 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 bg-gray-50">
+        <section className="py-16 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 bg-gray-50 dark:bg-gray-900">
             {items.map((item) => (
                 <Slide key={item.id} id={item.id} title={item.title} image={item.image} />
             ))}

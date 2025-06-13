@@ -9,9 +9,10 @@ export default function Persuratan() {
     };
 
     return (
-        <section id="persuratan" className="bg-teal-500 py-20 px-4 flex flex-col items-center">
+        <section id="persuratan" className="bg-teal-500 dark:bg-gray-800 py-20 px-4 flex flex-col items-center">
             <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow">Persuratan</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow mb-4">Persuratan</h1>
+                <div className="w-30 h-1 bg-white mx-auto"></div>
                 <p className="text-lg md:text-xl text-white/90 mt-2">Untuk detail foldernya tekan tombol di bawah</p>
             </div>
 
