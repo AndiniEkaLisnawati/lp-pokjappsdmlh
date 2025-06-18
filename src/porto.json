@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nama": "Brando",
+    "bidang": "Desain",
+    "instansi": "PT. Kreatif Indonesia",
+    "totalPelatihan": 5,
+    "fotoUrl": "https://www.scm.co.id/files/Image/Zulfikar.png",
+    "pengalaman": [
+        "Desain Grafis",
+        "Desain UI/UX"
+    ]
+  },
+  {
+    "id": 2,
+    "nama": "Zulfikar",
+    "bidang": "Pengembangan Web",
+    "instansi": "PT. Teknologi Canggih",
+    "totalPelatihan": 3,
+    "fotoUrl": "https://www.scm.co.id/files/Image/Zulfikar.png",
+    "pengalaman": [
+        "Pengembangan Frontend",
+        "Pengembangan Backend"
+    ]
+  },
+  {
+    "id": 3,
+    "nama": "Siti",
+    "bidang": "Data Science",
+    "instansi": "PT. Data Inovatif",
+    "totalPelatihan": 4,
+    "fotoUrl": "https://www.scm.co.id/files/Image/Zulfikar.png",
+    "pengalaman": [
+        "Analisis Data",
+        "Machine Learning"
+    ]
+  },
+  {
+    "id": 4,
+    "nama": "Andi",
+    "bidang": "Keamanan Siber",
+    "instansi": "PT. Keamanan Digital",
+    "totalPelatihan": 2,
+    "fotoUrl": "https://www.scm.co.id/files/Image/Zulfikar.png",
+    "pengalaman": [
+        "Penetration Testing",
+        "Keamanan Jaringan"
+    ]
+  },
+  {
+    "id": 5,
+    "nama": "Dewi",
+    "bidang": "Manajemen Proyek",
+    "instansi": "PT. Manajemen Proyek Terbaik",
+    "totalPelatihan": 6,
+    "fotoUrl": "https://www.scm.co.id/files/Image/Zulfikar.png",
+    "pengalaman": [
+        "Perencanaan Proyek",
+        "Pengelolaan Tim"
+    ]
+  }
+]
