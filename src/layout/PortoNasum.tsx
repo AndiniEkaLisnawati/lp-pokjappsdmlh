@@ -94,19 +94,26 @@ export default function PortoNasum() {
       <div className="w-30 h-1 bg-gray-800 dark:bg-white mx-auto rounded-full mb-2"></div>
       <p className="text-lg font-lg text-center mb-4">Untuk detail Klik bagian kotak narasumber</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {dummyData.map((d) => (
-          <div
-            key={d.id}
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 hover:shadow-lg transition cursor-pointer"
-            onClick={() => setSelected(d)}
-          >
-            <img src={d.fotoUrl} alt={d.name} className="w-full h-40 object-cover rounded-md mb-4" />
-            <h2 className="text-xl font-semibold">{d.name}</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-400">{d.bidang}</p>
-            <p className="text-sm">Instansi: {d.instansi}</p>
-            <p className="text-sm">Total Pelatihan: {d.totalPelatihan}</p>
-          </div>
-        ))}
+       {dummyData.map((d) => (
+  <div
+    key={d.id}
+    className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 
+      hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out 
+      cursor-pointer transform"
+    onClick={() => setSelected(d)}
+  >
+    <img
+      src={d.fotoUrl}
+      alt={d.name}
+      className="w-full h-40 object-cover rounded-md mb-4"
+    />
+    <h2 className="text-xl font-semibold">{d.name}</h2>
+    <p className="text-sm text-gray-600 dark:text-gray-400">{d.bidang}</p>
+    <p className="text-sm">Instansi: {d.instansi}</p>
+    <p className="text-sm">Total Pelatihan: {d.totalPelatihan}</p>
+  </div>
+))}
+
       </div>
 
       {selected && (
